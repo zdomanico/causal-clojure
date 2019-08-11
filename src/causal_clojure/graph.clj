@@ -1,6 +1,12 @@
-(ns causal-clojure.graph)
+(ns causal-clojure.graph
+  (:require [clojure.set])
+)
 
 (def empty-graph {})
+
+(declare add-node)
+(declare add-edges)
+(declare add-childless-nodes)
 
 (defn create-graph [lst]
   "Creates a graph from a list of lists. Each of the sub-component lists
