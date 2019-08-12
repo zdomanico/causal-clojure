@@ -1,7 +1,11 @@
 (ns causal-clojure.core
-  (:gen-class))
+  (:require [causal-clojure.graph :as graph]
+            [causal-clojure.decisiontree :as dt])
+  (:gen-class)
+)
 
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (println "Hello, World!"))
+  (println "We can import otherfiles!")
+)
